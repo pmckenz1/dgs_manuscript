@@ -1,0 +1,7 @@
+census_population_size,n_sample_diploids,true_s,best_s,best_loglik,n_sites,n_loci,boundary_optimum,combined_vcf
+100,3,0.65,0.6499999999999999,-928.6619198627342,532,10000,False,results/joint_s0.650/N100/n3/simulated_loci_combined.vcf
+100,6,0.65,0.6499999999999999,-1888.8900299581674,738,10000,False,results/joint_s0.650/N100/n6/simulated_loci_combined.vcf
+250,3,0.65,0.6499999999999999,-2293.637654774059,1308,10000,False,results/joint_s0.650/N250/n3/simulated_loci_combined.vcf
+250,6,0.65,0.6499999999999999,-4784.0339589001505,1815,10000,False,results/joint_s0.650/N250/n6/simulated_loci_combined.vcf
+500,3,0.65,0.6499999999999999,-4777.735518033892,2681,10000,False,results/joint_s0.650/N500/n3/simulated_loci_combined.vcf
+500,6,0.65,0.6499999999999999,-9869.742746249263,3744,10000,False,results/joint_s0.650/N500/n6/simulated_loci_combined.vcf

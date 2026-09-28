@@ -1,0 +1,134 @@
+{
+  "best_loglik": -2694.9245911893418,
+  "best_s": 0.95,
+  "boundary_optimum": true,
+  "likelihood_curve": [
+    {
+      "delta_loglik": -3437.141528999026,
+      "loglik": -6132.066120188368,
+      "s": 0.0
+    },
+    {
+      "delta_loglik": -3193.8374925482244,
+      "loglik": -5888.762083737566,
+      "s": 0.049999999999999996
+    },
+    {
+      "delta_loglik": -2970.1847722474354,
+      "loglik": -5665.109363436777,
+      "s": 0.09999999999999999
+    },
+    {
+      "delta_loglik": -2759.7127088113907,
+      "loglik": -5454.6373000007325,
+      "s": 0.15
+    },
+    {
+      "delta_loglik": -2558.5200556724553,
+      "loglik": -5253.444646861797,
+      "s": 0.19999999999999998
+    },
+    {
+      "delta_loglik": -2364.0209321794723,
+      "loglik": -5058.945523368814,
+      "s": 0.24999999999999997
+    },
+    {
+      "delta_loglik": -2174.374735566876,
+      "loglik": -4869.299326756218,
+      "s": 0.3
+    },
+    {
+      "delta_loglik": -1988.1984261191578,
+      "loglik": -4683.1230173085,
+      "s": 0.35
+    },
+    {
+      "delta_loglik": -1804.4113748769655,
+      "loglik": -4499.335966066307,
+      "s": 0.39999999999999997
+    },
+    {
+      "delta_loglik": -1622.150220652576,
+      "loglik": -4317.074811841918,
+      "s": 0.44999999999999996
+    },
+    {
+      "delta_loglik": -1440.7265104032763,
+      "loglik": -4135.651101592618,
+      "s": 0.49999999999999994
+    },
+    {
+      "delta_loglik": -1259.6170640188957,
+      "loglik": -3954.5416552082374,
+      "s": 0.5499999999999999
+    },
+    {
+      "delta_loglik": -1078.488584401016,
+      "loglik": -3773.4131755903577,
+      "s": 0.6
+    },
+    {
+      "delta_loglik": -897.271192022758,
+      "loglik": -3592.1957832120997,
+      "s": 0.6499999999999999
+    },
+    {
+      "delta_loglik": -716.3193388715395,
+      "loglik": -3411.243930060881,
+      "s": 0.7
+    },
+    {
+      "delta_loglik": -536.7544232298515,
+      "loglik": -3231.679014419193,
+      "s": 0.7499999999999999
+    },
+    {
+      "delta_loglik": -361.23967235668533,
+      "loglik": -3056.164263546027,
+      "s": 0.7999999999999999
+    },
+    {
+      "delta_loglik": -195.9643049581823,
+      "loglik": -2890.888896147524,
+      "s": 0.85
+    },
+    {
+      "delta_loglik": -56.92904139414895,
+      "loglik": -2751.8536325834907,
+      "s": 0.8999999999999999
+    },
+    {
+      "delta_loglik": 0.0,
+      "loglik": -2694.9245911893418,
+      "s": 0.95
+    }
+  ],
+  "metadata": {
+    "N": 1.0,
+    "epsilon": 0.0,
+    "error_rate": 0.0,
+    "grid_size": 20,
+    "input_polarization": "ref",
+    "mode": "unfolded",
+    "probability_regularization": "none",
+    "site_conditioning": "polymorphic",
+    "support_drop": 1.92,
+    "unsupported_cell_count": 0,
+    "unsupported_cells": [],
+    "unsupported_site_count": 0
+  },
+  "method": "grid",
+  "n_diploids": 6,
+  "n_excluded_cells": 0,
+  "n_excluded_sites": 0,
+  "n_input_sites": 1285,
+  "n_sites": 1285,
+  "support_interval": [
+    0.95,
+    0.95
+  ],
+  "warnings": [
+    "best selfing-rate estimate is on the grid boundary"
+  ]
+}

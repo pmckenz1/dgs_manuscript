@@ -1,0 +1,32 @@
+# Publish manuscript validation analyses and their source notebooks.
+/*
+!/.gitignore
+!/validation/
+!/validation/*
+!/validation/manuscript_simulation_check/
+!/validation/manuscript_simulation_check/**
+/validation/archive/
+!/validation/identity_disequilibrium/
+!/validation/identity_disequilibrium/**
+
+# Transient files within the published analysis.
+/validation/manuscript_simulation_check/.ipynb_checkpoints/
+/validation/identity_disequilibrium/.ipynb_checkpoints/
+/validation/identity_disequilibrium/results/
+**/__pycache__/
+*.py[cod]
+*.swp
+*~
+
+!/validation/fixed_individuals/
+!/validation/fixed_individuals/**
+/validation/fixed_individuals/results/*
+!/validation/fixed_individuals/results/likelihoods.csv
+!/validation/fixed_individuals/results/fixed_individuals_likelihood_heatmap.png
+!/validation/fixed_individuals/results/fixed_individuals_likelihood_heatmap.pdf
+!/validation/fixed_individuals/results/fixed_n3_n6_s0.700/
+/validation/fixed_individuals/.ipynb_checkpoints/
+/validation/fixed_individuals/__pycache__/
+
+# Exclude notebook checkpoints across all analysis directories.
+**/.ipynb_checkpoints/

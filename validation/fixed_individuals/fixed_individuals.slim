@@ -1,0 +1,53 @@
+// SLiM 5.2: all loci share a population pedigree and sampled individuals.
+// A nonmutating spacer with recombination probability 0.5 separates loci.
+initialize() {
+    setSeed(seed);
+    defineConstant("end_cycle", asInteger(burn_mult * census_size));
+    initializeSLiMOptions(preventIncidentalSelfing=T);
+    initializeMutationRate(mu);
+    initializeMutationType("m1", 0.5, "f", 0.0);
+    initializeGenomicElementType("g1", m1, 1.0);
+    rates = c();
+    ends = c();
+    for (locus in seqLen(n_loci)) {
+        start = locus * (locus_length + 1);
+        end = start + locus_length - 1;
+        initializeGenomicElement(g1, start, end);
+        rates = c(rates, within_locus_r);
+        ends = c(ends, end);
+        if (locus < n_loci - 1) {
+            rates = c(rates, 0.5);
+            ends = c(ends, end + 1);
+        }
+    }
+    initializeRecombinationRate(rates, ends);
+}
+
+1 early() {
+    sim.addSubpop("p1", census_size);
+    p1.setSelfingRate(selfing_rate);
+    // -1 denotes an unknown history until the first observed outcross.
+    p1.individuals.tag = -1;
+}
+
+modifyChild() {
+    child.tag = 0;
+    if (isSelfing) {
+        child.tag = -1;
+        if (parent1.tag >= 0)
+            child.tag = parent1.tag + 1;
+    }
+    return T;
+}
+
+end_cycle late() {
+    inds = p1.individuals;
+    // Export in this order: metadata column indices refer to this vector.
+    inds.outputIndividualsToVCF(filePath=vcf_path, outputMultiallelics=F);
+    lines = "vcf_column,selfing_generations";
+    for (i in seqAlong(inds))
+        lines = c(lines, paste(c(i, inds[i].tag), sep=","));
+    writeFile(history_path, lines);
+    catn("Finished cycle " + sim.cycle + "; individuals=" + size(inds));
+    sim.simulationFinished();
+}

@@ -1,0 +1,2 @@
+census_population_size,n_sample_diploids,true_s,best_s,best_loglik,n_sites,n_loci,boundary_optimum,combined_vcf
+250,3,0.05,0.0,-3847.0863927282944,2239,10000,True,results/joint_s0.050/N250/n3/simulated_loci_combined.vcf

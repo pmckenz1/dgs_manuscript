@@ -1,0 +1,12 @@
+# Install selfdgs separately (version 0.1.0 used for supplied results).
+# Python 3.12 was used for the supplied results. Install SLiM 5.2 separately.
+numpy==2.5.1
+pandas==2.3.0
+matplotlib==3.10.6
+scipy==1.16.0
+cyvcf2==0.34.0
+nbformat==5.10.4
+nbclient==0.10.4
+nbconvert==7.16.6
+ipykernel==6.29.5
+jupyter-core==5.8.1
